@@ -9,8 +9,6 @@
 
 1. Clone a repo ([rotki](https://github.com/rotki/rotki), [Kohaku](https://github.com/ethereum/wallet-poc), [helios](https://github.com/a16z/helios)) or scrape a frontend ([aave](https://app.aave.com), [zerion](https://app.zerion.io)):
 
-  - `git clone git@github.com:rotki/rotki.git`
-
 2. **Write [the skill needed](SKILL.md)** 
   - `mkdir ~/.claude/skills/scrape-rpc-calls`
   - `vim ~/.claude/skills/scrape-rpc-calls/SKILL.md`
