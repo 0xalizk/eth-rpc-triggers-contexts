@@ -3,6 +3,8 @@
 ![RPC Call Distribution](rpc-dist.png)
 
 
+![Relative RPC Call Distribution](rpc-dist-relative.png)
+
 ### Scraping RPC Triggers with Claude
 
 1. Clone a repo ([rotki](https://github.com/rotki/rotki), [Kohaku](https://github.com/ethereum/wallet-poc), [helios](https://github.com/a16z/helios)) or scrape a frontend ([aave](https://app.aave.com), [zerion](https://app.zerion.io)):
