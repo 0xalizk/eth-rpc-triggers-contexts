@@ -1,6 +1,6 @@
 ### Distribution of reads-related RPC calls
 
-By Claude using a [custom skill](SKILL.md)
+By Claude Code using this [custom skill](SKILL.md)
 
 ![RPC Call Distribution](rpc-dist.png)
 
