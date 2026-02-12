@@ -1,0 +1,82 @@
+<div style="margin-left: 13px;"><details><summary>&nbsp; <b> Reads-related RPC calls</b></summary>
+
+<table style="background-color: white;">
+  <style>
+    table th, table td { background-color: white; }
+  </style>
+  <thead>
+    <tr>
+      <th align="left" colspan="2">Data source</th>
+      <th align="left">RPC methods that touch it</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="13"><b>Hot State <br>(full node)</b></td>
+      <td rowspan="6">State Trie<br><br><i><p style="color:red;">Mutable & appendable</p></i></td>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getbalance"><code>eth_getBalance</code></a><sup>†</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getstorageat"><code>eth_getStorageAt</code></a><sup>†</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getcode"><code>eth_getCode</code></a><sup>†</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_call"><code>eth_call</code></a><sup>†</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_gettransactioncount"><code>eth_getTransactionCount</code></a><sup>†</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getproof"><code>eth_getProof</code></a><sup>†</sup></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Transactions Trie<b>s</b> (1 per block) <br> Block header &amp; body<br><br><i><p style="color:blue;">Append-only</p></i></td>
+      <td><code>eth_getBlockTxCountBy{</code><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getblocktransactioncountbyhash"><code>Hash</code></a><code>, </code><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getblocktransactioncountbynumber"><code>Number</code></a><code>}</code></td>
+    </tr>
+    <tr>
+      <td><code>eth_getBlockBy{</code><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getblockbyhash"><code>Hash</code></a><code>, </code><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getblockbynumber"><code>Number</code></a><code>}</code></td>
+    </tr>
+    <tr>
+      <td><code>eth_getTxByBlock{</code> <a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_gettransactionbyhash"><code>Hash</code></a> , <a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_gettransactionbyblockhashandindex"><code>HashAndIndex</code></a><code>, </code><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_gettransactionbyblocknumberandindex"><code>NumberAndIndex</code></a><code>}</code></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Receipts Trie<b>s</b> (1 trie per block)<br><br><i><p style="color:blue;">Append-only</p></i></td>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_gettransactionreceipt"><code>eth_getTxReceipt</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getlogs"><code>eth_getLogs</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getfilterlogs"><code>eth_getFilterLogs</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getfilterchanges"><code>eth_getFilterChanges</code></a></td>
+    </tr>
+    <tr>
+      <td rowspan="6"><b>Historical State <br>(archival node)</b></td>
+      <td rowspan="6">Historical State Trie<br><br><i><p style="color:blue;">Append-only</p></i></td>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getbalance"><code>eth_getBalance</code></a><sup>‡</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getstorageat"><code>eth_getStorageAt</code></a><sup>‡</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getcode"><code>eth_getCode</code></a><sup>‡</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_call"><code>eth_call</code></a><sup>‡</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_gettransactioncount"><code>eth_getTransactionCount</code></a><sup>‡</sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://ethereum.org/developers/docs/apis/json-rpc/#eth_getproof"><code>eth_getProof</code></a><sup>‡</sup></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><i><sup>†</sup> when <code><a href="https://ethereum.org/developers/docs/apis/json-rpc/#block-parameter">blockNumber</a></code> &lt;= 128 &nbsp;&nbsp;&nbsp; <sup>‡</sup> when <code><a href="https://ethereum.org/developers/docs/apis/json-rpc/#block-parameter">blockNumber</a></code> &gt; 128</i></p>
+
+</details></div>
